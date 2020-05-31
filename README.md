@@ -1,5 +1,5 @@
-![](https://raw.githubusercontent.com/Murzchnvok/dotfiles-bspwm/master/material-bspwm.png)
 ![](https://raw.githubusercontent.com/Murzchnvok/dotfiles-bspwm/master/material-rofi.png)
+![](https://raw.githubusercontent.com/Murzchnvok/dotfiles-bspwm/master/material-bspwm.png)
 
 #### Polybar Theme
   - [Polybar Material](https://github.com/rzchnvok/polybar-material)
@@ -8,7 +8,7 @@
 - [Material Rofi Theme](https://github.com/Murzchnvok/material-rofi-theme)
 
 #### Wallpaper
-  - [GDrive](https://drive.google.com/open?id=1n66N3uHPnV1Je23sNSKgbxCEWKaW_P5x)
+  - [GDrive](https://drive.google.com/file/d/1NuNEOlN3iGJdMm4E0h_FZnYNwbqwNKj7/view?usp=sharing)
 
 #### Gtk Theme
   - [Materia Dark](https://github.com/nana-4/materia-theme)
