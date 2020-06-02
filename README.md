@@ -1,3 +1,4 @@
+![](https://raw.githubusercontent.com/Murzchnvok/dotfiles-bspwm/master/bspwm.png)
 ![](https://raw.githubusercontent.com/Murzchnvok/dotfiles-bspwm/master/material-rofi.png)
 ![](https://raw.githubusercontent.com/Murzchnvok/dotfiles-bspwm/master/material-bspwm.png)
 
