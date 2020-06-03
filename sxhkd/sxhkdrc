@@ -2,7 +2,7 @@ super + Return
 	xfce4-terminal
 
 super + d
-	dmenu_run -nb "#212121" -nf "#b3e5fc" -sb "#272727" -sf "#4fc3f7"
+	dmenu_run -nb "#212121" -nf "#82b1ff" -sb "#212121" -sf "#ffff8d"
 
 super + shift + {i,o,p}
 	rofi -show {run,drun,window}
