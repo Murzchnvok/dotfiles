@@ -3,7 +3,8 @@
 sxhkd &
 compton -CG &
 $HOME/.config/polybar/launch.sh &
-nitrogen --restore &
+$HOME/.fehbg
+#nitrogen --restore &
 thunar --daemon &
 
 bspc monitor -d 1 2 3 4 5 6
