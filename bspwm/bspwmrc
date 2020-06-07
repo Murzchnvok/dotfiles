@@ -3,7 +3,8 @@
 sxhkd &
 compton -CG &
 $HOME/.config/polybar/launch.sh &
-$HOME/.fehbg
+$HOME/.config/polybar/scripts/wallpaper.sh preset auto 10 &
+#$HOME/.fehbg
 #nitrogen --restore &
 thunar --daemon &
 
@@ -14,9 +15,8 @@ bspc config normal_border_color "#212121"
 bspc config border_width 1
 bspc config window_gap 5
 
-bspc config split_ratio          0.52
-bspc config borderless_monocle   true
-bspc config gapless_monocle      true
+bspc config split_ratio 0.52
+bspc config borderless_monocle true
+bspc config gapless_monocle true
 
 bspc rule -a XTerm state=floating
-
