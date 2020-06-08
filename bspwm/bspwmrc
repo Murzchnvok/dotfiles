@@ -3,8 +3,8 @@
 sxhkd &
 compton -CG &
 $HOME/.config/polybar/launch.sh &
-$HOME/.config/polybar/scripts/wallpaper.sh preset auto 10 &
-#$HOME/.fehbg
+#$HOME/.config/polybar/scripts/wallpaper.sh preset auto 10 &
+$HOME/.fehbg
 #nitrogen --restore &
 thunar --daemon &
 
