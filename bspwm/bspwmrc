@@ -4,6 +4,7 @@ sxhkd &
 compton -CG &
 $HOME/.config/polybar/launch.sh &
 #$HOME/.config/polybar/scripts/wallpaper.sh preset auto 10 &
+#$HOME/.config/polybar/scripts/wallpaper.sh presetgif &
 $HOME/.fehbg
 #nitrogen --restore &
 thunar --daemon &
