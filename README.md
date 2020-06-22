@@ -8,9 +8,8 @@
 #### Rofi Theme
 - [Material Rofi Theme](https://github.com/Murzchnvok/material-rofi-theme)
 
-#### Wallpaper
-- [Japanese Room](https://drive.google.com/file/d/1IjmhsbaQ6gIJ4HcTFymFTGLQ3rqQiiLk/view?usp=sharing)
-- [Girl Umbrella](https://drive.google.com/file/d/1sz0SUMp0OOER0Si5Uu9rtSfpzE4Z6A8r/view?usp=sharing)
+#### Wallpaper Collection
+- [GDrive](https://drive.google.com/drive/folders/1o1qjRgkJtnF_8uGB1z6MRsQUjWinHUsw?usp=sharing)
 
 #### Gtk Theme
 - [Materia Dark](https://github.com/nana-4/materia-theme)
