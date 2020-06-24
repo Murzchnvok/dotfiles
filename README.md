@@ -3,7 +3,7 @@
 ![](https://raw.githubusercontent.com/Murzchnvok/dotfiles-bspwm/master/material-bspwm.png)
 
 #### Polybar Theme
-- [Polybar Material](https://github.com/rzchnvok/polybar-material)
+- [Polybar Material](https://github.com/Murzchnvok/polybar-material)
 
 #### Rofi Theme
 - [Material Rofi Theme](https://github.com/Murzchnvok/material-rofi-theme)
