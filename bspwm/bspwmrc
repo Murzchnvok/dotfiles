@@ -3,6 +3,7 @@
 sxhkd &
 picom -CG &
 $HOME/.config/polybar/launch.sh &
+$HOME/.config/conky/startconky.sh &
 #$HOME/.config/polybar/scripts/wallpaper.sh preset auto 10 &
 #$HOME/.config/polybar/scripts/wallpaper.sh presetgif &
 $HOME/.fehbg

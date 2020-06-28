@@ -5,7 +5,7 @@ super + d
 	dmenu_run -nb "#212121" -nf "#82b1ff" -sb "#212121" -sf "#ffff8d"
 
 super + shift + {i,o,p}
-	rofi -show {run,drun,window}
+	rofi -show {run,drun,window} -pid /tmp/rofi
 
 control + alt + Delete
 	lxsession-logout -p ""
@@ -23,13 +23,13 @@ XF86AudioPrev
 	playerctl previous
 
 XF86AudioRaiseVolume
-	pactl set-sink-volume 0 +5%
+	pactl set-sink-volume 1 +5%
 
 XF86AudioLowerVolume
-	pactl set-sink-volume 0 -5%
+	pactl set-sink-volume 1 -5%
 
 XF86AudioMute
-	pactl set-sink-mute 0 toggle
+	pactl set-sink-mute 1 toggle
 
 XF86MonBrightnessUp
 	xbacklight -inc 5
