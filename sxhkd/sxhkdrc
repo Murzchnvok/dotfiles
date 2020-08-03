@@ -5,7 +5,7 @@ super + d
 	dmenu_run -nb "#181818" -nf "#00b0ff" -sb "#181818" -sf "#ffea00"
 
 super + shift + {i,o,p}
-	rofi -show {run,drun,window}
+	rofi -show {run,drun,window} -theme ~/Projects/fun/rofi-collection/material/material.rasi
 
 control + alt + Delete
 	lxsession-logout -p ""
