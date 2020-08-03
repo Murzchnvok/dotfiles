@@ -1,22 +1,19 @@
-![](https://raw.githubusercontent.com/Murzchnvok/dotfiles-bspwm/master/bspwm.png)
-![](https://raw.githubusercontent.com/Murzchnvok/dotfiles-bspwm/master/material-rofi.png)
+# bspwm dotfiles
 
-#### Polybar Theme
-- [Polybar Material](https://github.com/Murzchnvok/polybar-material)
+My personal bspwm dotfiles, for now I'm using the Material theme.
 
-#### Rofi Theme
-- [Material Rofi Theme](https://github.com/Murzchnvok/material-rofi-theme)
+## I keep everything separate, here's my collection of themes and wallpapers
 
-#### Wallpaper Collection
-- [GDrive](https://drive.google.com/drive/folders/1o1qjRgkJtnF_8uGB1z6MRsQUjWinHUsw?usp=sharing)
+* [Polybar Collection](https://github.com/Murzchnvok/polybar-collection)
+* [Rofi Collection](https://github.com/Murzchnvok/rofi-collection)
+* [Wallpaper Collection](https://drive.google.com/drive/folders/1o1qjRgkJtnF_8uGB1z6MRsQUjWinHUsw?usp=sharing)
 
-#### Gtk Theme
-- [Materia Dark](https://github.com/nana-4/materia-theme)
+## GTK and Icon Theme
 
-#### Icon Theme
-- [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
-- [Papirus Folders](https://github.com/PapirusDevelopmentTeam/papirus-folders)
+* [Materia Dark](https://github.com/nana-4/materia-theme)
+* [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
+* [Papirus Folders](https://github.com/PapirusDevelopmentTeam/papirus-folders)
 
-#### Terminal Colors
-- [Material Colors](https://github.com/Murzchnvok/polybar-material/blob/master/material-colors.txt)
-
+![Desktop](screenshots/desktop.png)
+![Rofi](screenshots/rofi.png)
+![Some Apps](screenshots/some-apps.png)

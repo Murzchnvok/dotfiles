@@ -2,10 +2,10 @@ super + Return
 	xfce4-terminal
 
 super + d
-	dmenu_run -nb "#212121" -nf "#82b1ff" -sb "#212121" -sf "#ffff8d"
+	dmenu_run -nb "#181818" -nf "#00b0ff" -sb "#181818" -sf "#ffea00"
 
 super + shift + {i,o,p}
-	rofi -show {run,drun,window} -pid /tmp/rofi
+	rofi -show {run,drun,window}
 
 control + alt + Delete
 	lxsession-logout -p ""
@@ -13,36 +13,35 @@ control + alt + Delete
 control + alt + l
 	slock
 
-XF86AudioPlay
-	playerctl play-pause
+{XF86AudioStop,XF86AudioPlay,XF86AudioPrev,XF86AudioNext}
+	playerctl {stop,play-pause,previous,next}
 
-XF86AudioNext
-	playerctl next
-
-XF86AudioPrev
-	playerctl previous
-
-XF86AudioRaiseVolume
-	pactl set-sink-volume 1 +5%
-
-XF86AudioLowerVolume
-	pactl set-sink-volume 1 -5%
+{XF86AudioRaiseVolume,XF86AudioLowerVolume}
+	pactl set-sink-volume 1 {+5%,-5%}
 
 XF86AudioMute
-	pactl set-sink-mute 1 toggle
+	pactl set-sink-mute 0 toggle
 
-XF86MonBrightnessUp
-	xbacklight -inc 5
+{XF86MonBrightnessUp,XF86MonBrightnessDown}
+	xbacklight -{inc,dec} 5
 
-XF86MonBrightnessDown
-	xbacklight -dec 5
+{Prior,Next}
+	xbacklight -{inc,dec} 5
+
+XF86HomePage
+	thunar
+
+XF86Mail
+	thunderbird
+
+XF86Calculator
+	galculator
 
 super + Escape
 	pkill -USR1 -x sxhkd
 
-#
-# bspwm hk
-#
+
+# bspwm hotkeys
 
 # quit/restart bspwm
 super + alt + {q,r}
