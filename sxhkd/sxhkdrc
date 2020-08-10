@@ -25,7 +25,7 @@ XF86AudioMute
 {XF86MonBrightnessUp,XF86MonBrightnessDown}
 	xbacklight -{inc,dec} 5
 
-{Prior,Next}
+shift + {Prior,Next}
 	xbacklight -{inc,dec} 5
 
 XF86HomePage
