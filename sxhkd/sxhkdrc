@@ -17,10 +17,10 @@ control + alt + l
 	playerctl {stop,play-pause,previous,next}
 
 {XF86AudioRaiseVolume,XF86AudioLowerVolume}
-	pactl set-sink-volume 1 {+5%,-5%}
+	/usr/bin/pactl set-sink-volume 0 {+5%,-5%}
 
 XF86AudioMute
-	pactl set-sink-mute 0 toggle
+	/usr/bin/pactl set-sink-mute 0 toggle
 
 {XF86MonBrightnessUp,XF86MonBrightnessDown}
 	xbacklight -{inc,dec} 5
