@@ -16,4 +16,4 @@ My personal bspwm dotfiles, for now I'm using the Material theme.
 
 ![Desktop](screenshots/desktop.png)
 ![Rofi](screenshots/rofi.png)
-![Some Apps](screenshots/some-apps.png)
+![Some Apps](screenshots/pomotroid.png)

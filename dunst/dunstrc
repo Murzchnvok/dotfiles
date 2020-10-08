@@ -1,5 +1,5 @@
 [global]
-    font = SauceCodePro Nerd Font Regular 9
+    font = JetBrainsMono Nerd Font Regular 9
 
     dmenu = /usr/bin/dmenu -p dunst:
 
@@ -33,8 +33,8 @@
     startup_notification = false
 
 [frame]
-    width = 3
-    color = "#fafafa"
+    width = 2
+    color = "#f8f8f2"
 
 [shortcuts]
     close = mod4+m
@@ -43,19 +43,19 @@
     context = mod4+shift+i
 
 [urgency_low]
-    background = "#212121"
-    foreground = "#fffde7"
-    frame_color = "#ffea00"
+    background = "#282a36"
+    foreground = "#f1fa8c"
+    frame_color = "#f1fa8c"
     timeout = 3
 
 [urgency_normal]
-    background = "#212121"
-    foreground = "#e8f5e9"
-    frame_color = "#00e676"
+    background = "#282a36"
+    foreground = "#50fa7b"
+    frame_color = "#50fa7b"
     timeout = 5
 
 [urgency_critical]
-    background = "#212121"
-    foreground = "#ffebee"
-    frame_color = "#ff1744"
+    background = "#282a36"
+    foreground = "#ff5555"
+    frame_color = "#ff5555"
     timeout = 7
