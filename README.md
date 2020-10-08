@@ -10,9 +10,9 @@ My personal bspwm dotfiles, for now I'm using the Material theme.
 
 ## GTK and Icon Theme
 
-* [Materia Dark](https://github.com/nana-4/materia-theme)
+* [Dracula](https://draculatheme.com/gtk)
 * [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
-* [Papirus Folders](https://github.com/PapirusDevelopmentTeam/papirus-folders)
+* [Papirus Folders](https://github.com/PapirusDevelopmentTeam/papirus-folders) (violet)
 
 ![Desktop](screenshots/desktop.png)
 ![Rofi](screenshots/rofi.png)
