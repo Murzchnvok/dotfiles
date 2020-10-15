@@ -3,8 +3,6 @@
 
     dmenu = /usr/bin/dmenu -p dunst:
 
-    browser = /usr/bin/firefox -new-tab
-
     alignment = center
     allow_markup = yes
     bounce_freq = 0

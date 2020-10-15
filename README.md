@@ -1,6 +1,6 @@
-# bspwm dotfiles
+# My dotfiles
 
-My personal bspwm dotfiles, for now I'm using the Material theme.
+My personal dotfiles, using Dracula because the dark side is comfortable.
 
 ## I keep everything separate, here's my collection of themes and wallpapers
 
