@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sxhkd &
+sxhkd -f &
 picom -CG &
 $HOME/polybar-collection/launch.sh
 $HOME/.fehbg

@@ -11,15 +11,20 @@ hide_edge_borders both
 title_align center
 workspace_layout tabbed
 
-exec_always --no-startup-id $HOME/polybar-collection/launch.sh
-exec_always --no-startup-id $HOME/.fehbg
+exec --no-startup-id picom -CG
+exec --no-startup-id thunar --daemon
 
-bindsym $mod+Shift+d exec --no-startup-id dmenu_run -nb "#282a36" -nf "#282a36" -sb "#282a36" -sf "#8be9fd"
+exec_always --no-startup-id $HOME/.fehbg
+exec_always --no-startup-id $HOME/polybar-collection/launch.sh
+
+bindsym $mod+Shift+d exec --no-startup-id dmenu_run -nb "#282a36" -nf "#bd93f9" -sb "#282a36" -sf "#50fa7b"
 bindsym $mod+Shift+i exec --no-startup-id rofi -show run -theme $rofi_theme
 bindsym $mod+Shift+o exec --no-startup-id rofi -show drun -theme $rofi_theme
 bindsym $mod+Shift+p exec --no-startup-id rofi -show window -theme $rofi_theme
 
 bindsym Control+$alt+l exec --no-startup-id slock
+
+bindsym Control+$alt+Delete exec --no-startup-id lxsession-logout -p ""
 
 bindsym Shift+Prior exec --no-startup-id xbacklight -inc 5
 bindsym Shift+Next exec --no-startup-id xbacklight -dec 5
