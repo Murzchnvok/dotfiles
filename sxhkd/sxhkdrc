@@ -2,10 +2,10 @@ super + Return
 	xfce4-terminal
 
 super + @space
-	dmenu_run -nb "#282a36" -nf "#6272a4" -sb "#282a36" -sf "#8be9fd"
+	dmenu_run -nb "#151515" -nf "#ffffff" -sb "#414141" -sf "#ffffff"
 
 super + shift + {i,o,p}
-	rofi -show {run,drun,window} -theme ~/Projects/fun/rofi-collection/dracula/dracula.rasi
+	rofi -show {run,drun,window} -theme ~/Projects/fun/rofi-collection/minimal/minimal.rasi
 
 control + alt + Delete
 	lxsession-logout -p ""
