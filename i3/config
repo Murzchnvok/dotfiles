@@ -2,10 +2,10 @@
 
 set $mod Mod4
 set $alt Mod1
-set $rofi_theme "$HOME/rofi-collection/minimal/minimal.rasi"
+set $rofi_theme "$HOME/rofi-collection/murz/murz.rasi"
 
 default_border none
-default_floating_border normal
+default_floating_border none
 font pango:Iosevka Nerd Font 0
 hide_edge_borders both
 title_align center
@@ -17,12 +17,12 @@ exec --no-startup-id thunar --daemon
 exec_always --no-startup-id $HOME/.fehbg
 exec_always --no-startup-id $HOME/polybar-collection/launch.sh
 
-bindsym $mod+Shift+d exec --no-startup-id dmenu_run -nb "#151515" -nf "#ffffff" -sb "#414141" -sf "#ffffff"
+bindsym $mod+Shift+d exec --no-startup-id dmenu_run -nb "#18181B" -nf "#5D5E72" -sb "#18181B" -sf "#A0A0AB"
 bindsym $mod+Shift+i exec --no-startup-id rofi -show run -theme $rofi_theme
 bindsym $mod+Shift+o exec --no-startup-id rofi -show drun -theme $rofi_theme
 bindsym $mod+Shift+p exec --no-startup-id rofi -show window -theme $rofi_theme
 
-bindsym Control+$alt+l exec --no-startup-id slock
+bindsym Control+$alt+l exec --no-startup-id i3lock-fancy -gp
 
 bindsym Control+$alt+Delete exec --no-startup-id lxsession-logout -p ""
 
@@ -142,7 +142,7 @@ bindsym $mod+r mode "resize"
 #         status_command i3status
 # }
 
-client.focused          #ffffff #ffffff #ffffff #ffffff   #ffffff
-client.focused_inactive #414141 #414141 #ffffff #414141   #414141
-client.unfocused        #151515 #151515 #ffffff #151515   #151515
-client.urgent           #ff1744 #ff1744 #ffffff #ff1744   #ff1744
+client.focused          #A0A0AB #A0A0AB #F8F8F8 #A0A0AB #A0A0AB
+client.focused_inactive #5D5E72 #5D5E72 #F8F8F8 #5D5E72 #5D5E72
+client.unfocused        #18181B #18181B #F8F8F8 #18181B #18181B
+client.urgent           #FF7575 #FF7575 #F8F8F8 #FF7575 #FF7575

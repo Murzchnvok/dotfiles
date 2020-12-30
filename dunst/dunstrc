@@ -3,6 +3,8 @@
 
     dmenu = /usr/bin/dmenu -p dunst:
 
+    browser = /usr/bin/firefox -new-tab
+
     alignment = center
     allow_markup = yes
     bounce_freq = 0
@@ -41,19 +43,19 @@
     context = mod4+shift+i
 
 [urgency_low]
-    background = "#282a36"
-    foreground = "#f1fa8c"
-    frame_color = "#f1fa8c"
+    background = "#18181B"
+    foreground = "#6BA2FF"
+    frame_color = "#A0A0AB"
     timeout = 3
 
 [urgency_normal]
-    background = "#282a36"
-    foreground = "#50fa7b"
-    frame_color = "#50fa7b"
+    background = "#18181B"
+    foreground = "#96F7C8"
+    frame_color = "#A0A0AB"
     timeout = 5
 
 [urgency_critical]
-    background = "#282a36"
-    foreground = "#ff5555"
-    frame_color = "#ff5555"
+    background = "#18181B"
+    foreground = "#FF7575"
+    frame_color = "#A0A0AB"
     timeout = 7
