@@ -4,8 +4,8 @@ super + Return
 super + @space
 	dmenu_run -nb "#18181B" -nf "#5D5E72" -sb "#18181B" -sf "#A0A0AB"
 
-super + shift + {i,o,p}
-	rofi -show {run,drun,window} -theme ~/Projects/fun/rofi-collection/murz/murz.rasi
+super + shift + {i, o, p}
+	rofi -show {run, drun, window} -theme ~/Projects/fun/rofi-collection/murz/murz.rasi
 
 super + shift + u
 	xfce4-appfinder
@@ -16,20 +16,23 @@ control + alt + Delete
 control + alt + l
 	slock
 
-{XF86AudioStop,XF86AudioPlay,XF86AudioPrev,XF86AudioNext}
-	playerctl {stop,play-pause,previous,next}
+{XF86AudioPrev, XF86AudioPlay, XF86AudioNext, XF86AudioStop}
+	mpc {prev, toggle, next, stop}
 
-{XF86AudioRaiseVolume,XF86AudioLowerVolume}
-	/usr/bin/pactl set-sink-volume 0 {+5%,-5%}
+{XF86AudioStop, XF86AudioPlay, XF86AudioPrev, XF86AudioNext}
+	playerctl {stop, play-pause, previous, next}
+
+{XF86AudioRaiseVolume, XF86AudioLowerVolume}
+	/usr/bin/pactl set-sink-volume alsa_output.pci-0000_00_1b.0.analog-stereo {+5%, -5%}
 
 XF86AudioMute
-	/usr/bin/pactl set-sink-mute 0 toggle
+	/usr/bin/pactl set-sink-mute alsa_output.pci-0000_00_1b.0.analog-stereo toggle
 
-{XF86MonBrightnessUp,XF86MonBrightnessDown}
-	xbacklight -{inc,dec} 5
+{XF86MonBrightnessUp, XF86MonBrightnessDown}
+	xbacklight -{inc, dec} 5
 
-shift + {Prior,Next}
-	xbacklight -{inc,dec} 5
+shift + {Prior, Next}
+	xbacklight -{inc, dec} 5
 
 XF86HomePage
 	thunar
