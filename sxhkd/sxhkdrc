@@ -29,10 +29,10 @@ XF86AudioMute
 	/usr/bin/pactl set-sink-mute alsa_output.pci-0000_00_1b.0.analog-stereo toggle
 
 {XF86MonBrightnessUp, XF86MonBrightnessDown}
-	xbacklight -{inc, dec} 5
+	xbacklight -{inc,dec} 5
 
 shift + {Prior, Next}
-	xbacklight -{inc, dec} 5
+	xbacklight -{inc,dec} 5
 
 XF86HomePage
 	thunar
