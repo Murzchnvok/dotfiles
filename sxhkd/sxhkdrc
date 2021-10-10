@@ -2,10 +2,10 @@ super + Return
 	xfce4-terminal
 
 super + @space
-	dmenu_run -nb "#18181B" -nf "#5D5E72" -sb "#18181B" -sf "#A0A0AB"
+	dmenu_run -nb "#151515" -nf "#474747" -sb "#151515" -sf "#ffffff"
 
 super + shift + {i, o, p}
-	rofi -show {run, drun, window} -theme ~/Projects/fun/rofi-collection/murz/murz.rasi
+	rofi -show {run, drun, window} -theme ~/Projects/fun/rofi-collection/minimal/minimal.rasi
 
 super + shift + u
 	xfce4-appfinder
@@ -94,7 +94,7 @@ super + bracket{left,right}
 	bspc desktop -f {prev,next}.local
 
 # focus the last node/desktop
-super + {grave,Tab}
+super + {Caps_Lock,Tab}
 	bspc {node,desktop} -f last
 
 # focus the older or newer node in the focus history

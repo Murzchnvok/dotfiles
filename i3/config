@@ -2,7 +2,7 @@
 
 set $mod Mod4
 set $alt Mod1
-set $rofi_theme "$HOME/rofi-collection/murz/murz.rasi"
+set $rofi_theme "$HOME/rofi-collection/minimal/minimal.rasi"
 
 default_border none
 default_floating_border none
@@ -17,7 +17,7 @@ exec --no-startup-id thunar --daemon
 exec_always --no-startup-id $HOME/.fehbg
 exec_always --no-startup-id $HOME/polybar-collection/launch.sh
 
-bindsym $mod+Shift+d exec --no-startup-id dmenu_run -nb "#18181B" -nf "#5D5E72" -sb "#18181B" -sf "#A0A0AB"
+bindsym $mod+Shift+d exec --no-startup-id dmenu_run -nb "#282a36" -nf "#bd93f9" -sb "#282a36" -sf "#50fa7b"
 bindsym $mod+Shift+i exec --no-startup-id rofi -show run -theme $rofi_theme
 bindsym $mod+Shift+o exec --no-startup-id rofi -show drun -theme $rofi_theme
 bindsym $mod+Shift+p exec --no-startup-id rofi -show window -theme $rofi_theme
