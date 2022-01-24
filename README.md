@@ -1,8 +1,17 @@
 # My dotfiles
 
-My personal dotfiles.
+My personal dotfiles. Using [Gruvbox](https://github.com/morhetz/gruvbox), one of the best colorscheme ever, maybe my favorite nowadays, and really pleasant for the eyes.
 
 ![Desktop](screenshots/desktop.png)
+![Code](screenshots/code.png)
+
+## Themes & the rest
+
+- [GTK Theme](https://github.com/Fausto-Korpsvart/Gruvbox-GTK-Theme)
+- [Icon Theme](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
+- [Papirus Folders (brown)](https://github.com/PapirusDevelopmentTeam/papirus-folders)
+- [VSCode Theme](https://marketplace.visualstudio.com/items?itemName=jdinhlife.gruvbox)
+- [VSCode Font](https://github.com/microsoft/cascadia-code)
 
 ## Check it out my collections
 
