@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sxhkd -f &
+sxhkd &
 picom -CG &
 $HOME/polybar-collection/launch.sh
 $HOME/.fehbg
@@ -8,8 +8,8 @@ thunar --daemon &
 
 bspc monitor -d 1 2 3 4 5
 
-bspc config focused_border_color "#bd93f9"
-bspc config normal_border_color "#282a36"
+bspc config focused_border_color "#458588"
+bspc config normal_border_color "#282828"
 bspc config border_width 1
 bspc config window_gap 5
 

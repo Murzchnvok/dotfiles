@@ -5,7 +5,7 @@ mpd_music_dir = "~/Music"
 mpd_host = "127.0.0.1"
 mpd_port = "6600"
 
-song_columns_list_format = "(7f)[green]{l} (50)[white]{f:Title}"
+song_columns_list_format = "(7f)[green]{l} (30)[white]{a} (50)[white]{t}"
 
 header_visibility = no
 lines_scrolled = "1"

@@ -2,10 +2,10 @@ super + Return
 	xfce4-terminal
 
 super + @space
-	dmenu_run -nb "#151515" -nf "#474747" -sb "#151515" -sf "#ffffff"
+	dmenu_run -nb "#282828" -nf "#83a598" -sb "#282828" -sf "#8ec07c"
 
 super + shift + {i, o, p}
-	rofi -show {run, drun, window} -theme ~/Projects/fun/rofi-collection/minimal/minimal.rasi
+	rofi -show {run, drun, window} -theme $HOME/rofi-collection/gruvbox/gruvbox.rasi
 
 super + shift + u
 	xfce4-appfinder

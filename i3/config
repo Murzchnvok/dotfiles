@@ -2,7 +2,7 @@
 
 set $mod Mod4
 set $alt Mod1
-set $rofi_theme "$HOME/rofi-collection/minimal/minimal.rasi"
+set $rofi_theme "$HOME/rofi-collection/gruvbox/gruvbox.rasi"
 
 default_border none
 default_floating_border none
@@ -17,7 +17,7 @@ exec --no-startup-id thunar --daemon
 exec_always --no-startup-id $HOME/.fehbg
 exec_always --no-startup-id $HOME/polybar-collection/launch.sh
 
-bindsym $mod+Shift+d exec --no-startup-id dmenu_run -nb "#282a36" -nf "#bd93f9" -sb "#282a36" -sf "#50fa7b"
+bindsym $mod+Shift+d exec --no-startup-id dmenu_run -nb "#282828" -nf "#83a598" -sb "#282828" -sf "#8ec07c"
 bindsym $mod+Shift+i exec --no-startup-id rofi -show run -theme $rofi_theme
 bindsym $mod+Shift+o exec --no-startup-id rofi -show drun -theme $rofi_theme
 bindsym $mod+Shift+p exec --no-startup-id rofi -show window -theme $rofi_theme
@@ -138,11 +138,7 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# bar {
-#         status_command i3status
-# }
-
-client.focused          #A0A0AB #A0A0AB #F8F8F8 #A0A0AB #A0A0AB
-client.focused_inactive #5D5E72 #5D5E72 #F8F8F8 #5D5E72 #5D5E72
-client.unfocused        #18181B #18181B #F8F8F8 #18181B #18181B
-client.urgent           #FF7575 #FF7575 #F8F8F8 #FF7575 #FF7575
+client.focused          #8ec07c #8ec07c #ebdbb2 #8ec07c #8ec07c
+client.focused_inactive #83a598 #83a598 #ebdbb2 #83a598 #83a598
+client.unfocused        #282828 #282828 #ebdbb2 #282828 #282828
+client.urgent           #fb4934 #fb4934 #ebdbb2 #fb4934 #fb4934
