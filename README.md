@@ -10,8 +10,6 @@ My personal dotfiles. Using [Gruvbox](https://github.com/morhetz/gruvbox), one o
 - [GTK Theme](https://github.com/Fausto-Korpsvart/Gruvbox-GTK-Theme)
 - [Icon Theme](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
 - [Papirus Folders (brown)](https://github.com/PapirusDevelopmentTeam/papirus-folders)
-- [VSCode Theme](https://marketplace.visualstudio.com/items?itemName=jdinhlife.gruvbox)
-- [VSCode Font](https://github.com/microsoft/cascadia-code)
 
 ## Check it out my collections
 
