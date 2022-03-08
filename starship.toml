@@ -1,0 +1,25 @@
+format = """
+$git_branch $git_status
+$python$character
+"""
+right_format = """
+$cmd_duration#$directory
+"""
+add_newline = true
+
+[character]
+success_symbol = "[->](bold blue)"
+error_symbol = "[->](bold red)"
+
+[cmd_duration]
+format = "[$duration]($style) "
+
+[directory]
+truncation_length = 1
+truncation_symbol = ""
+
+[git_branch]
+format = "[$symbol$branch]($style)"
+
+[python]
+format = '[(\($virtualenv\) )]($style)'
