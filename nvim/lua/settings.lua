@@ -19,10 +19,6 @@ cmd('colorscheme gruvbox-material')
 
 g['nvim_tree_indent_markers'] = 1
 g['nvim_tree_show_icons'] = eval('{ "git": 1, "folders": 0, "files": 1, "folder_arrows": 0 }')
-
-g['neoformat_enable_python'] = eval('[ "black", "isort" ]')
-g['neoformat_run_all_formatters'] = 1
-
 cmd('highlight NvimTreeSymlink guifg=#83a598')
 cmd('highlight NvimTreeFolderName guifg=#a89984 gui=bold')
 cmd('highlight NvimTreeEmptyFolderName guifg=#a89984')
@@ -30,6 +26,10 @@ cmd('highlight NvimTreeOpenedFolderName guifg=#8ec07c gui=bold')
 cmd('highlight NvimTreeExecFile guifg=#b8bb26 gui=bold')
 cmd('highlight NvimTreeIndentMarker guifg=#8ec07c')
 cmd('highlight NvimTreeStatusLine guibg=#00000000')
+
+g['neoformat_python_black'] = eval('{ "args": ["--target-version py310"] }')
+g['neoformat_enable_python'] = eval('[ "black", "isort" ]')
+g['neoformat_run_all_formatters'] = 1
 
 set.showmode = false
 
