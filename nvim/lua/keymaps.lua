@@ -24,7 +24,7 @@ map('n', '<C-l>', '<C-w>l', opts)
 map('n', '<A-j>', ':m .+1<CR>', opts)
 map('n', '<A-k>', ':m .-2<CR>', opts)
 
-map('n', '<C-i>', ':Neoformat<CR>', opts)
+map('n', '<C-i>', ':Format<CR>', opts)
 
 map('n', '<C-n>', ':NvimTreeToggle<CR>', opts)
 map('n', '<Leader>r', ':NvimTreeRefresh<CR>', opts)

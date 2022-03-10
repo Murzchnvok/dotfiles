@@ -27,7 +27,7 @@ return require('packer').startup(function(use)
     }
   }
 
-  use 'sbdchd/neoformat'
+  use 'mhartington/formatter.nvim'
 
   use 'numToStr/Comment.nvim'
 

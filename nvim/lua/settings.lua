@@ -27,10 +27,6 @@ cmd('highlight NvimTreeExecFile guifg=#b8bb26 gui=bold')
 cmd('highlight NvimTreeIndentMarker guifg=#8ec07c')
 cmd('highlight NvimTreeStatusLine guibg=#00000000')
 
-g['neoformat_python_black'] = eval('{ "args": ["--target-version py310"] }')
-g['neoformat_enable_python'] = eval('[ "black", "isort" ]')
-g['neoformat_run_all_formatters'] = 1
-
 set.showmode = false
 
 set.completeopt = { 'menu', 'menuone', 'noselect' }
