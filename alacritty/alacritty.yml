@@ -34,22 +34,22 @@ scrolling:
 
 font:
   normal:
-    family: FantasqueSansMono Nerd Font
+    family: CaskaydiaCove Nerd Font
     style: Regular
 
   bold:
-    family: FantasqueSansMono Nerd Font
+    family: CaskaydiaCove Nerd Font
     style: Bold
 
   italic:
-    family: FantasqueSansMono Nerd Font
+    family: CaskaydiaCove Nerd Font
     style: Italic
 
   bold_italic:
-    family: FantasqueSansMono Nerd Font
+    family: CaskaydiaCove Nerd Font
     style: Bold Italic
 
-  size: 10.0
+  size: 9.0
 
   offset:
     x: 0
@@ -148,6 +148,8 @@ cursor:
 
 shell:
   program: /usr/bin/tmux
+#   args:
+#     - --login
 
 # working_directory: None
 
