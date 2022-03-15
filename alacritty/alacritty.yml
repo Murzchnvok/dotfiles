@@ -34,26 +34,26 @@ scrolling:
 
 font:
   normal:
-    family: CaskaydiaCove Nerd Font
+    family: Cascadia Code
     style: Regular
 
   bold:
-    family: CaskaydiaCove Nerd Font
+    family: Cascadia Code
     style: Bold
 
   italic:
-    family: CaskaydiaCove Nerd Font
+    family: Cascadia Code
     style: Italic
 
   bold_italic:
-    family: CaskaydiaCove Nerd Font
+    family: Cascadia Code
     style: Bold Italic
 
-  size: 9.0
+  size: 8.5
 
   offset:
     x: 0
-    y: 0
+    y: 2
 
   glyph_offset:
     x: 0
