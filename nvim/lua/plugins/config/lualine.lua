@@ -50,7 +50,7 @@ local settings = {
   lualine_b = {
     {
       'diagnostics',
-      -- symbols = { error = 'E', warn = 'W', info = 'I', hint = 'H' },
+      symbols = { error = '~', warn = '~', info = '~', hint = '~' },
       diagnostics_color = {
         error = { fg = palette.red[1], gui = 'bold' },
         warn = { fg = palette.yellow[1], gui = 'bold' },

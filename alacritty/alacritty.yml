@@ -49,11 +49,11 @@ font:
     family: Cascadia Code
     style: Bold Italic
 
-  size: 8.5
+  size: 9.0
 
   offset:
     x: 0
-    y: 2
+    y: 1
 
   glyph_offset:
     x: 0
