@@ -3,6 +3,7 @@ local g = vim.g
 local cmd = vim.api.nvim_command
 local eval = vim.api.nvim_eval
 
+cmd('language en_US')
 cmd('filetype plugin on')
 cmd('syntax on')
 
