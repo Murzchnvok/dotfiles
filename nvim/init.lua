@@ -1,4 +1,4 @@
-require('settings')
-require('impatient')
-require('plugins')
-require('keymaps')
+require("settings")
+require("impatient")
+require("plugins")
+require("keymaps")
