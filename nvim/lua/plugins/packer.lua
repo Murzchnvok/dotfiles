@@ -15,7 +15,10 @@ return require('packer').startup(function(use)
 
   use {
     'nvim-treesitter/nvim-treesitter',
-    run = ':TSUpdate'
+    requires = {
+      'windwp/nvim-ts-autotag',
+    },
+    run = ':TSUpdate',
   }
 
   use {
@@ -26,7 +29,8 @@ return require('packer').startup(function(use)
       'L3MON4D3/LuaSnip',
       'saadparwaiz1/cmp_luasnip',
       'rafamadriz/friendly-snippets',
-      'ray-x/lsp_signature.nvim'
+      'ray-x/lsp_signature.nvim',
+      'aca/emmet-ls',
     }
   }
 

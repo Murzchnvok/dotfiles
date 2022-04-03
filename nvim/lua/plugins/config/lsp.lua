@@ -23,6 +23,14 @@ local on_attach = function(_, bufnr)
   lspsig.on_attach()
 end
 
+
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+lspconfig.emmet_ls.setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+  filetypes = { 'html', 'css', 'typescriptreact', 'javascriptreact' },
+})
+
 lspconfig.gopls.setup({
   capabilities = capabilities,
   on_attach = on_attach,

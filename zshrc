@@ -1,5 +1,8 @@
-export PATH=$HOME/bin:$HOME/go/bin:/usr/local/bin:$HOME/.local/bin:$PATH
+NODE_VERSION="v17.8.0"
+NODE_PATH="$HOME/.nvm/versions/node/$NODE_VERSION/bin/"
 
+export MANPATH="/usr/local/man:$MANPATH"
+export PATH=$HOME/bin:$HOME/go/bin:/usr/local/bin:$HOME/.local/bin:$NODE_PATH:$PATH
 export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME=""
@@ -8,14 +11,10 @@ plugins=(git zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
-export MANPATH="/usr/local/man:$MANPATH"
-
-export LANG=en_US.UTF-8
-
 export OPENWEATHER_API_KEY=970606528befaa317698cc75083db8b2
 
 export NVM_DIR="$HOME/.nvm"
-alias startnvm="[ -s '$NVM_DIR/nvm.sh' ] && \. '$NVM_DIR/nvm.sh'"
+alias snvm="[ -s '$NVM_DIR/nvm.sh' ] && \. '$NVM_DIR/nvm.sh'"
 
 alias zshconfig="mousepad ~/.zshrc"
 

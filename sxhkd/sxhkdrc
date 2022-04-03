@@ -1,14 +1,11 @@
 super + Return
-	xfce4-terminal
+	alacritty
 
 super + @space
 	dmenu_run -nb "#282828" -nf "#83a598" -sb "#282828" -sf "#8ec07c"
 
 super + shift + {i, o, p}
 	rofi -show {run, drun, window} -theme $HOME/rofi-collection/gruvbox/gruvbox.rasi
-
-super + shift + u
-	xfce4-appfinder
 
 control + alt + Delete
 	lxsession-logout -p ""
@@ -22,11 +19,11 @@ control + alt + l
 {XF86AudioStop, XF86AudioPlay, XF86AudioPrev, XF86AudioNext}
 	playerctl {stop, play-pause, previous, next}
 
-{XF86AudioRaiseVolume, XF86AudioLowerVolume}
-	/usr/bin/pactl set-sink-volume alsa_output.pci-0000_00_1b.0.analog-stereo {+5%, -5%}
+{XF86AudioLowerVolume, XF86AudioRaiseVolume}
+  pactl set-sink-volume @DEFAULT_SINK@ {-5%, +5%}
 
 XF86AudioMute
-	/usr/bin/pactl set-sink-mute alsa_output.pci-0000_00_1b.0.analog-stereo toggle
+  pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 {XF86MonBrightnessUp, XF86MonBrightnessDown}
 	xbacklight -{inc,dec} 5
@@ -38,7 +35,7 @@ XF86HomePage
 	thunar
 
 XF86Mail
-	thunderbird
+	mpc single
 
 XF86Calculator
 	galculator
@@ -46,14 +43,9 @@ XF86Calculator
 super + Escape
 	pkill -USR1 -x sxhkd
 
-
-# bspwm hotkeys
-
-# quit/restart bspwm
 super + alt + {q,r}
 	bspc {quit,wm -r}
 
-# close or close and kill
 super + {_,shift + }w
 	bspc node -{c,k}
 
