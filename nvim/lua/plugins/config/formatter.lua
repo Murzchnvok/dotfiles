@@ -1,5 +1,17 @@
+local buf_name = vim.fn.fnameescape(vim.api.nvim_buf_get_name(0))
+
 require("formatter").setup({
 	filetype = {
+		css = {
+			function()
+				return {
+					exe = "prettier",
+					args = { "--stdin-filepath", buf_name, "--single-quote" },
+					stdin = true,
+				}
+			end,
+		},
+
 		go = {
 			function()
 				return {
@@ -18,11 +30,21 @@ require("formatter").setup({
 			end,
 		},
 
+		html = {
+			function()
+				return {
+					exe = "prettier",
+					args = { "--stdin-filepath", buf_name, "--double-quote" },
+					stdin = true,
+				}
+			end,
+		},
+
 		javascript = {
 			function()
 				return {
 					exe = "prettier",
-					args = { "--stdin-filepath", vim.fn.fnameescape(vim.api.nvim_buf_get_name(0)), "--single-quote" },
+					args = { "--stdin-filepath", buf_name, "--single-quote" },
 					stdin = true,
 				}
 			end,
@@ -32,7 +54,7 @@ require("formatter").setup({
 			function()
 				return {
 					exe = "prettier",
-					args = { "--stdin-filepath", vim.fn.fnameescape(vim.api.nvim_buf_get_name(0)), "--single-quote" },
+					args = { "--stdin-filepath", buf_name, "--single-quote" },
 					stdin = true,
 				}
 			end,
@@ -42,7 +64,7 @@ require("formatter").setup({
 			function()
 				return {
 					exe = "prettier",
-					args = { "--stdin-filepath", vim.fn.fnameescape(vim.api.nvim_buf_get_name(0)), "--double-quote" },
+					args = { "--stdin-filepath", buf_name, "--double-quote" },
 					stdin = true,
 				}
 			end,
@@ -52,7 +74,6 @@ require("formatter").setup({
 			function()
 				return {
 					exe = "stylua",
-					args = {},
 					stdin = false,
 				}
 			end,
@@ -88,7 +109,7 @@ require("formatter").setup({
 			function()
 				return {
 					exe = "prettier",
-					args = { "--stdin-filepath", vim.fn.fnameescape(vim.api.nvim_buf_get_name(0)), "--single-quote" },
+					args = { "--stdin-filepath", buf_name, "--single-quote" },
 					stdin = true,
 				}
 			end,
@@ -98,7 +119,7 @@ require("formatter").setup({
 			function()
 				return {
 					exe = "prettier",
-					args = { "--stdin-filepath", vim.fn.fnameescape(vim.api.nvim_buf_get_name(0)), "--single-quote" },
+					args = { "--stdin-filepath", buf_name, "--single-quote" },
 					stdin = true,
 				}
 			end,

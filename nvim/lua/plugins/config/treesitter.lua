@@ -4,6 +4,7 @@ require("nvim-treesitter.configs").setup({
 	},
 
 	highlight = {
+		disable = { "css", "html" },
 		enable = true,
 	},
 })

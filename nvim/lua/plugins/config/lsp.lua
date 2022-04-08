@@ -1,6 +1,7 @@
 local lspconfig = require("lspconfig")
 local lspsig = require("lsp_signature")
 local capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protocol.make_client_capabilities())
+capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 local buf_map = vim.api.nvim_buf_set_keymap
 local opts = { noremap = true, silent = true }
@@ -23,11 +24,27 @@ local on_attach = function(_, bufnr)
 	lspsig.on_attach()
 end
 
-capabilities.textDocument.completion.completionItem.snippetSupport = true
+lspconfig.cssls.setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+	filetypes = { "css", "scss", "less" },
+})
+
+lspconfig.cssmodules_ls.setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+	filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact" },
+})
+
 lspconfig.emmet_ls.setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 	filetypes = { "html", "css", "typescriptreact", "javascriptreact" },
+})
+
+lspconfig.html.setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
 })
 
 lspconfig.gopls.setup({
