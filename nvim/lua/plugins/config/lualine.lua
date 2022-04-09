@@ -7,36 +7,27 @@ theme = {
 		a = { bg = palette.grey2[1], fg = palette.bg0[1], gui = "bold" },
 		b = { bg = palette.bg0[1], fg = palette.grey2[1] },
 		c = { bg = palette.bg0[1], fg = palette.grey2[1] },
+		x = { bg = palette.bg0[1], fg = palette.grey2[1], gui = "italic" },
+		y = { bg = palette.bg0[1], fg = palette.grey2[1] },
+		z = { bg = palette.bg0[1], fg = palette.grey2[1] },
 	},
 	insert = {
-		a = { bg = palette.bg_green[1], fg = palette.bg0[1], gui = "bold" },
-		b = { bg = palette.bg0[1], fg = palette.grey2[1] },
-		c = { bg = palette.bg0[1], fg = palette.grey2[1] },
+		a = { bg = palette.green[1], fg = palette.bg0[1], gui = "bold" },
 	},
 	visual = {
 		a = { bg = palette.bg_red[1], fg = palette.bg0[1], gui = "bold" },
-		b = { bg = palette.bg0[1], fg = palette.grey2[1] },
-		c = { bg = palette.bg0[1], fg = palette.grey2[1] },
 	},
 	replace = {
 		a = { bg = palette.bg_yellow[1], fg = palette.bg0[1], gui = "bold" },
-		b = { bg = palette.bg0[1], fg = palette.grey2[1] },
-		c = { bg = palette.bg0[1], fg = palette.grey2[1] },
 	},
 	command = {
 		a = { bg = palette.blue[1], fg = palette.bg0[1], gui = "bold" },
-		b = { bg = palette.bg0[1], fg = palette.grey2[1] },
-		c = { bg = palette.bg0[1], fg = palette.grey2[1] },
 	},
 	terminal = {
 		a = { bg = palette.purple[1], fg = palette.bg0[1], gui = "bold" },
-		b = { bg = palette.bg0[1], fg = palette.grey2[1] },
-		c = { bg = palette.bg0[1], fg = palette.grey2[1] },
 	},
 	inactive = {
 		a = { bg = palette.bg_statusline2[1], fg = palette.grey2[1] },
-		b = { bg = palette.bg0[1], fg = palette.grey2[1] },
-		c = { bg = palette.bg0[1], fg = palette.grey2[1] },
 	},
 }
 
@@ -51,16 +42,28 @@ local settings = {
 	},
 	lualine_b = {
 		{
-			"diagnostics",
-			symbols = { error = "~", warn = "~", info = "~", hint = "~" },
-			diagnostics_color = {
-				error = { fg = palette.red[1], gui = "bold" },
-				warn = { fg = palette.yellow[1], gui = "bold" },
-				info = { fg = palette.blue[1], gui = "bold" },
-				hint = { fg = palette.green[1], gui = "bold" },
-			},
+			"branch",
+			color = { fg = palette.purple[1], gui = "bold" },
+		},
+		{
+			"diff",
 			colored = true,
-			-- always_visible = true
+			diff_color = {
+				added = { fg = palette.green[1], gui = "bold" },
+				modified = { fg = palette.yellow[1], gui = "bold" },
+				removed = { fg = palette.red[1], gui = "bold" },
+			},
+			symbols = { added = "+", modified = "~", removed = "-" },
+		},
+		{
+			"diagnostics",
+			symbols = { error = "E~", warn = "W~", info = "I~", hint = "H~" },
+			diagnostics_color = {
+				error = { fg = palette.red[1], gui = "bold,italic" },
+				warn = { fg = palette.yellow[1], gui = "bold,italic" },
+				info = { fg = palette.blue[1], gui = "bold,italic" },
+				hint = { fg = palette.green[1], gui = "bold,italic" },
+			},
 		},
 	},
 	lualine_c = {
@@ -69,14 +72,14 @@ local settings = {
 			show_filename_only = false,
 			show_modified_status = true,
 			buffers_color = {
-				active = { fg = palette.grey1[1], gui = "bold" },
+				active = { fg = palette.grey2[1], gui = "bold" },
 				inactive = { fg = palette.grey0[1], gui = "bold" },
 			},
 		},
 	},
-	lualine_x = {},
-	lualine_y = { "branch", "diff" },
-	lualine_z = { "location" },
+	lualine_x = { "%l:%c / %L" },
+	lualine_y = {},
+	lualine_z = {},
 }
 
 require("lualine").setup({
