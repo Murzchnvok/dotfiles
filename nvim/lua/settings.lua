@@ -48,7 +48,7 @@ set.fillchars = "eob: "
 set.number = true
 set.relativenumber = true
 
-set.hlsearch = false
+set.hlsearch = true
 
 set.ignorecase = true
 set.smartcase = true
