@@ -45,6 +45,11 @@ cmd("hi NvimTreeLspDiagnosticsHint guifg=#b0b846")
 cmd("hi StatusLine guibg=none")
 cmd("hi StatusLineNC guibg=none guifg=none")
 
+cmd("hi DiagnosticVirtualTextError guifg=#f2594b gui=italic")
+cmd("hi DiagnosticVirtualTextWarn guifg=#e9b143 gui=italic")
+cmd("hi DiagnosticVirtualTextInfo guifg=#80aa9e gui=italic")
+cmd("hi DiagnosticVirtualTextHint guifg=#8bba7f gui=italic")
+
 set.showmode = false
 
 set.signcolumn = "yes"

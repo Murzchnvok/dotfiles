@@ -57,12 +57,12 @@ local settings = {
 		},
 		{
 			"diagnostics",
-			symbols = { error = "E~", warn = "W~", info = "I~", hint = "H~" },
+			symbols = { error = "▎", warn = "▎", info = "▎", hint = "▎" },
 			diagnostics_color = {
 				error = { fg = palette.red[1], gui = "bold,italic" },
 				warn = { fg = palette.yellow[1], gui = "bold,italic" },
 				info = { fg = palette.blue[1], gui = "bold,italic" },
-				hint = { fg = palette.green[1], gui = "bold,italic" },
+				hint = { fg = palette.aqua[1], gui = "bold,italic" },
 			},
 		},
 	},
@@ -77,7 +77,7 @@ local settings = {
 			},
 		},
 	},
-	lualine_x = { "%l:%c / %L" },
+	lualine_x = { "%l:%c  ▎ %L" },
 	lualine_y = {},
 	lualine_z = {},
 }

@@ -6,6 +6,24 @@ capabilities.textDocument.completion.completionItem.snippetSupport = true
 local buf_map = vim.api.nvim_buf_set_keymap
 local opts = { noremap = true, silent = true }
 
+vim.diagnostic.config({
+	virtual_text = true,
+	signs = true,
+	underline = true,
+	update_in_insert = false,
+	severity_sort = false,
+	virtual_text = {
+		-- ■ ● x ▎
+		prefix = "●",
+	},
+})
+
+local signs = { Error = "▎", Warn = "▎", Hint = "▎", Info = "▎" }
+for type, icon in pairs(signs) do
+  local hl = "DiagnosticSign" .. type
+  vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
+end
+
 lspsig.setup({
 	floating_window = false,
 	hint_prefix = "",
