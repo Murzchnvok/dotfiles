@@ -9,10 +9,10 @@ require("nvim-tree").setup({
 		enable = true,
 		show_on_dirs = true,
 		icons = {
-			error = "E",
-			warning = "W",
-			info = "I",
-			hint = "H",
+			error = "▎",
+			warning = "▎",
+			info = "▎",
+			hint = "▎",
 		},
 	},
 
