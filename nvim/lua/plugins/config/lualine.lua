@@ -69,6 +69,7 @@ local settings = {
 	lualine_c = {
 		{
 			"buffers",
+			hide_filename_extension = false,
 			show_filename_only = false,
 			show_modified_status = true,
 			buffers_color = {

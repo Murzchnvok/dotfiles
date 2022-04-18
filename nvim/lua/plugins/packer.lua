@@ -38,12 +38,16 @@ return require("packer").startup(function(use)
 			"rafamadriz/friendly-snippets",
 			"ray-x/lsp_signature.nvim",
 			"aca/emmet-ls",
+			"j-hui/fidget.nvim",
 		},
 	})
 
 	use("mhartington/formatter.nvim")
 
-	use("numToStr/Comment.nvim")
+	use({
+		"numToStr/Comment.nvim",
+		tag = "v0.6",
+	})
 
 	use({
 		"nvim-telescope/telescope.nvim",

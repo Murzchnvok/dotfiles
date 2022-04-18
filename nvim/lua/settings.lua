@@ -50,6 +50,17 @@ cmd("hi DiagnosticVirtualTextWarn guifg=#e9b143 gui=italic")
 cmd("hi DiagnosticVirtualTextInfo guifg=#80aa9e gui=italic")
 cmd("hi DiagnosticVirtualTextHint guifg=#8bba7f gui=italic")
 
+cmd("hi TelescopeBorder guifg=#7c6f64")
+cmd("hi TelescopeMatching guifg=#80aa9e")
+cmd("hi TelescopeMultiSelection guifg=#b0b846")
+cmd("hi TelescopeNormal guifg=#a89984")
+cmd("hi TelescopePromptNormal guifg=#e2cca9 gui=italic")
+cmd("hi TelescopePromptPrefix guifg=#80aa9e")
+cmd("hi TelescopeResultsNormal guifg=#a89984")
+cmd("hi TelescopeSelection guifg=#e2cca9")
+cmd("hi TelescopeSelectionCaret guifg=#8bba7f")
+cmd("hi TelescopeTitle guifg=#8bba7f gui=italic")
+
 set.showmode = false
 
 set.signcolumn = "yes"
