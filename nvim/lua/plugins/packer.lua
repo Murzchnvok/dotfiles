@@ -44,10 +44,7 @@ return require("packer").startup(function(use)
 
 	use("mhartington/formatter.nvim")
 
-	use({
-		"numToStr/Comment.nvim",
-		tag = "v0.6",
-	})
+	use("numToStr/Comment.nvim")
 
 	use({
 		"nvim-telescope/telescope.nvim",
