@@ -61,6 +61,8 @@ cmd("hi TelescopeSelection guifg=#e2cca9")
 cmd("hi TelescopeSelectionCaret guifg=#8bba7f")
 cmd("hi TelescopeTitle guifg=#8bba7f gui=italic")
 
+set.updatetime = 100
+
 set.showmode = false
 
 set.signcolumn = "yes"

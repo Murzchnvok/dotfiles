@@ -42,3 +42,6 @@ map("n", "<Leader>do", ":lua vim.diagnostic.open_float()<CR>", opts)
 map("n", "<Leader>dp", ":lua vim.diagnostic.goto_prev()<CR>", opts)
 map("n", "<Leader>dn", ":lua vim.diagnostic.goto_next()<CR>", opts)
 map("n", "<Leader>dl", ":lua vim.diagnostic.setloclist()<CR>", opts)
+
+map("n", "<Leader>gd", ":Gitsigns diffthis<CR>", opts)
+map("n", "<Leader>gb", ":Gitsigns toggle_current_line_blame<CR>", opts)
