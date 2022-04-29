@@ -43,6 +43,11 @@ local on_attach = function(_, bufnr)
 	lspsig.on_attach()
 end
 
+lspconfig.clangd.setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
+
 lspconfig.cssls.setup({
 	capabilities = capabilities,
 	on_attach = on_attach,

@@ -6,6 +6,8 @@ vim.g.mapleader = " "
 
 map("i", "jj", "<Esc>", opts)
 
+map("n", "<Esc><Esc>", ":nohlsearch<CR>", opts)
+
 map("n", "<C-q>", ":q<CR>", opts)
 
 map("n", "<C-s>", ":w<CR>", opts)

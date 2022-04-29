@@ -2,6 +2,16 @@ local buf_name = vim.fn.fnameescape(vim.api.nvim_buf_get_name(0))
 
 require("formatter").setup({
 	filetype = {
+		c = {
+			function()
+				return {
+					exe = "clang-format",
+					args = { "-i --sort-includes --style=Google" },
+					stdin = false,
+				}
+			end,
+		},
+
 		css = {
 			function()
 				return {
