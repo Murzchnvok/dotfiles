@@ -39,6 +39,7 @@ return require("packer").startup(function(use)
 			"ray-x/lsp_signature.nvim",
 			"aca/emmet-ls",
 			"j-hui/fidget.nvim",
+			"simrat39/rust-tools.nvim",
 		},
 	})
 

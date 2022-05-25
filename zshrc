@@ -1,6 +1,3 @@
-NODE_VERSION="v17.8.0"
-NODE_PATH="$HOME/.nvm/versions/node/$NODE_VERSION/bin/"
-
 export MANPATH="/usr/local/man:$MANPATH"
 export PATH=$HOME/bin:$HOME/go/bin:/usr/local/bin:$HOME/.local/bin:$NODE_PATH:$PATH
 export ZSH="$HOME/.oh-my-zsh"
@@ -18,7 +15,8 @@ alias snvm="[ -s '$NVM_DIR/nvm.sh' ] && \. '$NVM_DIR/nvm.sh'"
 
 alias zshconfig="mousepad ~/.zshrc"
 
-alias ipy3="ipython3"
+alias ipy="ipython3"
+alias py="python3"
 
 alias fehbg="feh --bg-fill"
 
@@ -31,7 +29,7 @@ alias aptr="sudo apt remove"
 alias apta="sudo apt autoremove"
 alias apts="apt search"
 
-alias startx="sudo cpupower frequency-set -g performance && startx"
+alias s="sudo cpupower frequency-set -g performance && startx"
 alias gmouse="xinput set-prop 'USB GAMING MOUSE ' 'libinput Accel Speed' .89"
 
 eval "$(starship init zsh)"

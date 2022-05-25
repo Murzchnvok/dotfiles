@@ -81,23 +81,25 @@ lspconfig.pyright.setup({
 	on_attach = on_attach,
 })
 
-lspconfig.rust_analyzer.setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-	settings = {
-		["rust-analyzer"] = {
-			assist = {
-				importPrefix = "by_self",
-			},
-			cargo = {
-				loadOutDirsFromCheck = true,
-				allFeatures = true,
-			},
-			procMacro = {
-				enable = true,
-			},
-			checkOnSave = {
-				command = "clippy",
+require("rust-tools").setup({
+	server = {
+		on_attach = on_attach,
+		capabilities = capabilities,
+		settings = {
+			["rust-analyzer"] = {
+				assist = {
+					importPrefix = "by_self",
+				},
+				cargo = {
+					loadOutDirsFromCheck = true,
+					allFeatures = true,
+				},
+				procMacro = {
+					enable = true,
+				},
+				checkOnSave = {
+					command = "clippy",
+				},
 			},
 		},
 	},

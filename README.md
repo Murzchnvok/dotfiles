@@ -1,6 +1,6 @@
 # My dotfiles
 
-My personal dotfiles. Using [Gruvbox](https://github.com/morhetz/gruvbox), one of the best colorscheme ever, maybe my favorite nowadays, and really pleasant for the eyes.
+My personal dotfiles. Using [Gruvbox](https://github.com/morhetz/gruvbox), my favorite for sure!
 
 ![Desktop](screenshots/desktop.png)
 ![Code](screenshots/code.png)

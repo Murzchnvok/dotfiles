@@ -1,7 +1,7 @@
 window:
   dimensions:
-    columns: 0
-    lines: 0
+    columns: 130
+    lines: 35
 
   position:
     x: 0
