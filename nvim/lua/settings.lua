@@ -20,13 +20,6 @@ g.gruvbox_material_diagnostic_virtual_text = "colored"
 g.gruvbox_material_sign_column_background = "none"
 cmd("colorscheme gruvbox-material")
 
-g.nvim_tree_show_icons = {
-	git = 1,
-	folders = 1,
-	files = 1,
-	folder_arrows = 1,
-}
-
 cmd("hi NvimTreeEmptyFolderName guifg=#a89984")
 cmd("hi NvimTreeFolderIcon guifg=#a89984")
 cmd("hi NvimTreeFolderName guifg=#a89984 gui=bold")

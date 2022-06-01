@@ -37,6 +37,7 @@ return require("packer").startup(function(use)
 			"saadparwaiz1/cmp_luasnip",
 			"rafamadriz/friendly-snippets",
 			"ray-x/lsp_signature.nvim",
+			"williamboman/nvim-lsp-installer",
 			"aca/emmet-ls",
 			"j-hui/fidget.nvim",
 			"simrat39/rust-tools.nvim",
