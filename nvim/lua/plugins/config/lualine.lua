@@ -1,6 +1,6 @@
 local background = vim.opt.background:get()
-local configuration = vim.fn['gruvbox_material#get_configuration']()
-local palette = vim.fn['gruvbox_material#get_palette'](background, configuration.palette, configuration.colors_override)
+local configuration = vim.fn["gruvbox_material#get_configuration"]()
+local palette = vim.fn["gruvbox_material#get_palette"](background, configuration.palette, configuration.colors_override)
 
 theme = {
 	normal = {

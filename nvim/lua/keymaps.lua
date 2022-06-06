@@ -47,3 +47,11 @@ map("n", "<Leader>dl", ":lua vim.diagnostic.setloclist()<CR>", opts)
 
 map("n", "<Leader>gd", ":Gitsigns diffthis<CR>", opts)
 map("n", "<Leader>gb", ":Gitsigns toggle_current_line_blame<CR>", opts)
+
+map("n", "<Leader>ab", ":lua require'dap'.toggle_breakpoint()<CR>", opts)
+map("n", "<Leader>ar", ":lua require'dap'.repl.open()<CR>", opts)
+map("n", "<Leader>au", ":lua require'dapui'.toggle()<CR>", opts)
+map("n", "<F5>", ":lua require'dap'.continue()<CR>", opts)
+map("n", "<F10>", ":lua require'dap'.step_over()<CR>", opts)
+map("n", "<F11>", ":lua require'dap'.step_into()<CR>", opts)
+map("n", "<F12>", ":lua require'dap'.step_out()<CR>", opts)

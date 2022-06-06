@@ -44,6 +44,8 @@ return require("packer").startup(function(use)
 		},
 	})
 
+	use({ "mfussenegger/nvim-dap", requires = { "rcarriga/nvim-dap-ui" } })
+
 	use("mhartington/formatter.nvim")
 
 	use("numToStr/Comment.nvim")
