@@ -13,6 +13,7 @@ My personal dotfiles. Using [Gruvbox](https://github.com/morhetz/gruvbox), my fa
 
 ## Check it out my collections
 
+- [nvim config](https://github.com/Murzchnvok/nvim)
 - [Polybar Collection](https://github.com/Murzchnvok/polybar-collection)
 - [Rofi Collection](https://github.com/Murzchnvok/rofi-collection)
 - [Wallpaper Collection](https://drive.google.com/drive/folders/1o1qjRgkJtnF_8uGB1z6MRsQUjWinHUsw?usp=sharing)
