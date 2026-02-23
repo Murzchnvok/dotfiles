@@ -2,7 +2,7 @@ super + Return
 	alacritty
 
 super + shift + {i,o,p}
-	rofi -show {run,drun,window} -theme $HOME/rofi-collection/theme.rasi
+	rofi -show {run,drun,window} -theme $ROFI_COLLECTION/theme.rasi
 
 super + @space
 	dmenu_run -nb "#282828" -nf "#83a598" -sb "#282828" -sf "#8ec07c"
