@@ -1,0 +1,12 @@
+#
+# This file is parsed by pam_env module
+#
+# Syntax: simple "KEY=VAL" pairs on separate lines
+#
+POLYBAR_COLLECTION=/home/murz/projects/polybar-collection
+POLYBAR_BATTERY_ADP=ADP0
+POLYBAR_BATTERY_BAT=BAT0
+POLYBAR_WIRELESS=wlp1s0
+POLYBAR_WIRED=enp3s0f4u1
+POLYBAR_WEATHER_API=46276f91dcb44de4ac0134024262101
+ROFI_COLLECTION=/home/murz/projects/rofi-collection/theme.rasi
